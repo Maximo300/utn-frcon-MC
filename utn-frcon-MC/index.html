@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UTN FRCon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo-utn.png" alt="UTN logo" height="30">
+          <strong>UTN</strong> FRCon
+        </a>
+        <div>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#">La Conferencia</a></li>
+            <li class="nav-item"><a class="nav-link" href="#oradores">Los oradores</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ubicacion">Lugar y Fecha</a></li>
+            <li class="nav-item"><a class="nav-link" href="#formulario">Conviértete en un orador</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Comprar Tickets</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+ <section class="hero d-flex align-items-center justify-content-end">
+  <div class="overlay"></div> 
+  <div class="hero-content" data-aos="fade-left">
+    <h1>UTN FRCon</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptate assumenda deserunt impedit perspiciatis earum eligendi.</p>
+    <a href="#formulario" class="btn btn-outline-light me-2">Quiero ser orador</a>
+    <a href="#" class="btn btn-success">Comprar Tickets</a>
+  </div>
+</section>
+
+  <section class="container my-5" id="oradores">
+    <h2 class="text-center">CONOCE A LOS <strong>ORADORES</strong></h2>
+    <div class="row mt-4">
+      <div class="col-md-4 speaker-card" data-aos="zoom-in">
+        <img src="img/steve.jpg" alt="Steve Jobs">
+        <div class="mt-2">
+          <span class="badge bg-warning text-dark">JavaScript</span>
+          <span class="badge bg-primary">React</span>
+          <h5 class="mt-2">Steve Jobs</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="col-md-4 speaker-card" data-aos="zoom-in">
+        <img src="img/bill.jpg" alt="Bill Gates">
+        <div class="mt-2">
+          <span class="badge bg-warning text-dark">JavaScript</span>
+          <span class="badge bg-primary">React</span>
+          <h5 class="mt-2">Bill Gates</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="col-md-4 speaker-card" data-aos="zoom-in">
+        <img src="img/ada.jpeg" alt="Ada Lovelace">
+        <div class="mt-2">
+          <span class="badge bg-danger">Negocios</span>
+          <span class="badge bg-info text-white">Startups</span>
+          <h5 class="mt-2">Ada Lovelace</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="d-flex text-white" id="ubicacion">
+    <img src="img/ba3.jpg" alt="Obelisco" class="img-fluid w-50">
+    <div class="p-5 w-50 bg-dark">
+      <h4>Bs As - Octubre</h4>
+      <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina...</p>
+      <a href="#" class="btn btn-outline-light">Conocé más</a>
+    </div>
+  </section>
+
+  <section class="container formulario" id="formulario">
+    <h2 class="text-center">CONVIÉRTETE EN UN <strong>ORADOR</strong></h2>
+    <p class="text-center">Anótate como orador para dar una <span class="subrayado-punteado">charla Ignite</span>.</p>
+    <form data-aos="fade-up">
+      <div class="row mb-3">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Nombre" required>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Apellido" required>
+        </div>
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" placeholder="Sobre qué quieres hablar?" rows="4"></textarea>
+        <small>Recuerda incluir un título para tu charla</small>
+      </div>
+     <button type="submit" class="btn custom-submit w-100">Enviar</button>
+    </form>
+  </section>
+
+  <section class="mapa text-center py-5">
+  <h3 class="mb-4">Podés encontrarnos aquí</h3>
+  <div class="container">
+    <div class="ratio ratio-16x9">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.019325132989!2d-58.01384248484903!3d-31.389842181417474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ae2eac93a660b5%3A0x8051c9cd9a9c1a7a!2sUTN%20-%20Facultad%20Regional%20Concordia!5e0!3m2!1ses-419!2sar!4v1655841571489!5m2!1ses-419!2sar" 
+        width="100%" 
+        height="350" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">Preguntas frecuentes</div>
+        <div class="col">Contáctanos</div>
+        <div class="col">Prensa</div>
+        <div class="col">Conferencias</div>
+        <div class="col">Términos y condiciones</div>
+        <div class="col">Privacidad</div>
+        <div class="col">Estudiantes</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
